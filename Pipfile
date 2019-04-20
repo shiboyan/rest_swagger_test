@@ -12,6 +12,7 @@ drf-yasg = "*"
 celery = "*"
 utils = "*"
 pyjwt = "*"
+django-fsm = "*"
 
 [dev-packages]
 

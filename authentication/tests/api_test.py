@@ -1,10 +1,10 @@
 import pytest
-# import os
+import os
 import json
-# os.environ.setdefault("DJANGO_SETTINGS_MODULE", "rest_swagger_test.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "rest_swagger_test.settings")
 from rest_framework.test import APIClient
 from django.forms.models import model_to_dict
-from ..models import (
+from authentication.models import (
     StudentAuthToken,
     LitmosModule,
     LitmosStudent,
