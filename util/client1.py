@@ -19,7 +19,7 @@ def test_confirm_email(snapshot, create_course, create_team, create_token, djang
         'course_id': '1414493',
         'module_code': 'simulation'
     }
-
+    r = client.post('/api/auth/confirm/', data)
     with django_assert_num_queries(28):
         response = client.post('/api/auth/confirm/', data)
     response_content = json.loads(response.content)

@@ -45,6 +45,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
     path('api/rest-auth/', include('rest_auth.urls')),
+    path('', include('authentication.api.urls')),
     path('swagger/', SchemaView.with_ui(
         'swagger', cache_timeout=0), name='schema-swagger-ui')
 ]

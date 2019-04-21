@@ -13,6 +13,7 @@ celery = "*"
 utils = "*"
 pyjwt = "*"
 django-fsm = "*"
+xmltodict = "*"
 
 [dev-packages]
 
